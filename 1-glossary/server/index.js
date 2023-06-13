@@ -4,15 +4,15 @@ const path = require("path");
 
 const app = express();
 
-// Serves up all static and generated assets in ../client/dist.
-app.use(express.static(path.join(__dirname, "../client/dist")));
+// Serves up all static and generated assets in in a specified folder.
+app.use(express.static(path.join(__dirname, /* FILL ME IN */)));
 
-/**** 
- * 
- * 
+/****
+ *
+ *
  * Other routes here....
  *
- * 
+ *
  */
 
 app.listen(process.env.PORT);
